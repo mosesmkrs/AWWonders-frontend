@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom'
 import React, {  useState } from 'react';
 import LoginForm from '../components/LoginForm';
-import base_url from '../config';
+
 
 
 const RegisterForm = () => {
@@ -17,7 +17,7 @@ const RegisterForm = () => {
 
     // Send the registration request to the backend
     try {
-      const response = await fetch(`${base_url}/api/users/register`, {
+      const response = await fetch('/api/users/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

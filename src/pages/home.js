@@ -3,7 +3,7 @@ import Navbar from "../components/navbar"
 
 import { ThemeContext  } from '../components/themeContext'
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import base_url from "../config";
+
 
 //components
  import WorkoutDetails from '../components/workoutDetails'
@@ -23,7 +23,7 @@ const Home = () => {
 
      useEffect(() => {
         const fetchWorkouts = async() => {
-           const response = await fetch(`${base_url}/api/workouts`)
+           const response = await fetch('/api/workouts')
            const json = await response.json()
 
            if(response.ok) {
