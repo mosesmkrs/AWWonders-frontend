@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Navbar from "./navbar"
-import base_url from "../config"
+
 
 
 const WorkoutForm = () => {
@@ -17,7 +17,7 @@ const WorkoutForm = () => {
 
         const workout = {username,description,url,caption}
 
-        const response = await fetch(`${base_url}/api/workouts`,{
+        const response = await fetch('/api/workouts',{
             method: 'POST',
             body: JSON.stringify(workout),
             headers: {
