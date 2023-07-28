@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import React, { useRef, useState } from 'react';
 //import Loading from './loading';
 import Landing from './landing';
+import base_url from '../config';
 
 
 
@@ -20,7 +21,7 @@ const LoginForm = () => {
 
     // Send the login request to the backend
     try {
-      const response = await fetch('/api/users/login', {
+      const response = await fetch(`${base_url}/api/users/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
