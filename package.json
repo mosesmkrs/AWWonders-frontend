@@ -1,5 +1,5 @@
 {
-  "proxy": "https://awwonders-backend.vercel.app",
+  "proxy": "https://awwonders-backend.vercel.app/",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
