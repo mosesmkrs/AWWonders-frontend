@@ -20,7 +20,7 @@ const LoginForm = () => {
 
     // Send the login request to the backend
     try {
-      const response = await fetch('/api/users/login', {
+      const response = await fetch('https://awwonders-backend.vercel.app/api/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

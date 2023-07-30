@@ -17,7 +17,7 @@ const WorkoutForm = () => {
 
         const workout = {username,description,url,caption}
 
-        const response = await fetch('/api/workouts',{
+        const response = await fetch('https://awwonders-backend.vercel.app/api/workouts',{
             method: 'POST',
             body: JSON.stringify(workout),
             headers: {
